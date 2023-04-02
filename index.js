@@ -1,6 +1,6 @@
 // const path=require("path")
 const express = require('express');
-const handlebars = require('express-handlebars')
+// const handlebars = require('express-handlebars')
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
@@ -11,9 +11,9 @@ const io = new Server(server);
 
 app.use(express.static("public"))
 
-app.engine('handlebars', handlebars.engine());
-app.set('view engine', 'handlebars');
-app.set('views', "./views");
+// app.engine('handlebars', handlebars.engine());
+// app.set('view engine', 'handlebars');
+// app.set('views', "./views");
 
 router(app)
 

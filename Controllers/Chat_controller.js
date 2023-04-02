@@ -1,6 +1,6 @@
 class Chat_controller {
     index(req, res) {
-        res.render("index")
+        res.sendFile(__dirname + '/index.html');
     }
 }
 
