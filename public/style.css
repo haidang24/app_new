@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+/* icon wifi */
+
+/* kkhung nen */
+#khung{
+    background-image: linear-gradient(0,rgba(103, 103, 103,0.4),rgba(79, 79, 79,0.4)),url(background6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+/* Header */
+header{
+    width: 100vw;
+    height: 10vh;
+    background-image:linear-gradient(0,rgba(255, 0, 0, 0),rgba(0, 0, 252, 0)),url(background_header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+
+}
+a{
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: rgba(0, 76, 241, 0.7); */
+}
+a:hover{
+    background-image: linear-gradient(0,rgba(226, 255, 4,0.7),rgba(255, 0, 0, 0.7));
+}
+nav li{
+   display: inline-block;
+   line-height: 10vh;
+   padding: 0 5px;
+   box-sizing: border-box;
+}
+.search{
+    margin-top: -10vh;
+    margin-right: 15px;
+    color: #000000;
+    display: inline-block;
+    float: right;
+}
+.button_s{
+    border: none;
+    background-color: rgba(255, 255, 255,0);
+    margin-top: 1vh;
+}
+.icon_search{
+    color: rgba(0, 0, 0,0.9);
+    padding: 5px;
+    margin-left: 4px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.icon_search:hover{
+    color: violet;
+    cursor: pointer;
+}
+.input_search{
+    border: 2px solid black;
+    background-color: rgb(0, 255, 255,0);
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-size: medium;
+    color: #000000;
+    box-sizing: border-box;
+}
+i{
+    cursor: pointer;
+}
+/* Khung  */
+main{
+    margin-top: 3vh !important;
+    width: 400px;
+    height: 80vh;
+    margin: auto;
+    /* border: 2px solid rgb(0, 0, 0); */
+    border:4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;    
+    background-image: linear-gradient(0,rgba(254, 254, 254, 0.2),rgba(245, 245, 242, 0.2)),url(anh_nen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#none{
+    text-align: center;
+}
+.pin {
+    font-size: larger;
+    font-weight: 900;
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 23px;
+    margin-right: 15px;
+    float: right;
+    margin-top: 5px;
+    color: #000000;
+}
+.wifi{
+    font-size: larger;
+    font-weight: 900;
+     /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 23px;
+    margin-left: 20px;
+    float: left;
+    margin-top:8px;
+    color: #000000;
+}
+main #none::before{
+    content: "";
+    display: inline-block;
+    margin-top: 3px !important;
+    height: 5%;
+    width: 35%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    /* margin-left: 60px; */
+    margin-left: 10px;
+}
+
+/* #none>i{
+    float: right;
+    padding: 10px;
+    color: black;
+} */
+
+/* Hiển thị chat */
+main #chat_box{
+    margin-top: 10px;
+    position: relative;
+    height: 73%;
+    width: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: 20px;
+    scroll-margin: 5px;
+    scrollbar-gutter: stable;
+    scrollbar-color: #000000 rgba(0, 0, 0,0);
+}
+
+/* #chat_box::-webkit-scrollbar {
+    width: 20px;
+} */
+
+.chat_text p{
+    margin: 10px;
+    width: 70%;
+    /* border: 2px solid rgb(7, 6, 6); */
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: px;
+    float: right;
+    padding: 10px;
+    font-weight: 500;
+}
+
+
+
+/* Ô input */
+main #input_box{
+    height: 15%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;  
+}
+.input_text{
+    border:  2px solid rgba(0, 0, 0,0.5);
+    height: 60%;
+    width: 65%;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    margin-top: 20px;
+    color: black;
+
+}
+.button_c{
+    border: 2px solid black;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 60%;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(233, 240, 240,0.1);
+    padding: 4px;
+    border: none;
+    background-image: linear-gradient(0, rgba(64, 0, 255, 0.5), rgba(1, 139, 251, 0.5));
+}
+.button_c:hover{
+    background-image: linear-gradient(0, rgba(243, 57, 6, 0.8), rgba(255, 0, 43, 0.8));
+}
+
+p{
+    background-image: linear-gradient(0,rgba(255, 7, 7, 0.5),rgba(255, 0, 238, 0.5));
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    main{
+        width: 95%;
+        height: 75vh;
+    }
+    header{
+       text-align: center;
+    }
+    .input_search{
+        display: none;
+    }
+}
+@media screen and (max-height:500px) {
+    main{
+      height: 95%;
+    }
+    header {
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .input_text{
+        height: 70%;
+        color: rgb(7, 7, 7);
+        padding: 15px;
+        font-size: 18px;
+    }
+    #none{
+        display: none;
+    }
+}
+

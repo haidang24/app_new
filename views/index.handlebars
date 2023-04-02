@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/ffa5ad2f58.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>chat_box</title>
+</head>
+<body>
+    <div id="khung"> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <i class="fa fa-home" style="font-size:24px; color:black"></i>
+                    Home
+                </a></li>
+                <li><a href="/">
+                    <!-- <i class='far fa-comment' style='font-size:24px'></i> -->
+                    <!-- <i class='far fa-comment' style='font-size:24px'></i> -->
+                    <!-- <i class="fas fa-comment"></i> -->
+                    Chat
+                </a></li>      
+            </ul>
+        </nav>
+        <div class="search">
+            <input class="input_search" type="text" placeholder="Search......">
+             <button class="button_s">
+                <i class="fa fa-search icon_search" style="font-size: 25px;"></i>
+             </button>
+        </div>
+    </header>
+    <main>
+        <div id="none">
+            <!-- <i class="far fa-user"></i> -->
+            <i class="fa fa-wifi wifi"></i>
+            <i class="fa fa-battery-full pin"></i>
+        </div>
+        <div id="chat_box">
+                <div class="chat_text">
+                </div>            
+        </div>
+        <div id="input_box">
+            <form action="" class="form_nhap">
+                <input type="text" id="" class="input_text" placeholder="Mời Bạn Nhập">
+                <button class="button_c">Click Me</button>
+            </form>
+        </div>
+    </main>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js">
+    </script>
+</body>
+</html>
