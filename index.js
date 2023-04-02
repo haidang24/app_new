@@ -1,4 +1,4 @@
-const path=require("path")
+// const path=require("path")
 const express = require('express');
 const handlebars = require('express-handlebars')
 const app = express();
@@ -9,11 +9,11 @@ const controller = require("./Controllers/Chat_controller");
 const router = require("./routes/index_router");
 const io = new Server(server);
 
-app.use(express.static(path.join(__dirname,"public")))
+app.use(express.static("public"))
 
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', "./views");
 
 router(app)
 
